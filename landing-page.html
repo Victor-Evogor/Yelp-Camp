@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="author" content="Victor Evogor">
+				<title>YelpCamp | Landing Page</title>
+				<link rel="shortcut icon" href="Assets/Logo.svg" type="image/x-icon">
+				<link rel="stylesheet" href="../../frameworks/Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">	
+				<link rel="stylesheet" href="style.css"></link>
+				<style>
+								
+							.grid{
+											display: flex;
+											height:590px;
+											max-width:1500px;
+											margin: auto;
+							}	
+							.main-content{
+											width:55vw;
+											margin:auto;
+											padding-left: 10%;
+											display: flex;
+											flex-direction: column;
+											justify-content: space-between
+											
+											outline-color: green;
+											color:#555;
+											
+							}
+							h1{
+											color:#000;
+							}
+							.image{
+											width:45vw;
+							}
+							.image img{
+											display:block;
+											width:100%;
+											height: 100%;
+							}
+							ul{
+											list-style-image: url("Assets/Checkmark.svg");
+							}
+							.main-content-content{
+											margin: 70px 0;
+							}
+							a{
+											text-decoration: none;
+											color: inherit;
+							}
+							#mobile-img{
+											display: none;
+							}
+							@media (max-width:768px){
+											.grid{
+															display: block;
+															height: auto;
+															
+											}
+											.image{
+															display: none;
+											}
+											
+											
+											.main-content{
+															display: block;
+															width:100%;
+															padding-left:0;
+															margin:0;
+											}
+											#mobile-img{
+															display: block;
+															width:100%;
+											}
+											.main-content-content{
+															margin: 20px 0 0;
+															padding: 0 7%;
+											}
+											#logo-parent{
+															padding: 3px 7%;
+											}
+							}
+				</style>		
+<body>
+				<div class="grid">
+								<div class="main-content ">
+											<div id="logo-parent">	<img src="Assets/Logo.svg" alt=""></div>
+											<img src="Assets/Hero Image (Tablet and Mobile).jpg" alt="" id="mobile-img">
+												<div class="main-content-content">
+																<h1>Explore The Best Camps On Earth</h1>
+																<p>Yelp Camp is a curated list of the best camping spots on Earth. Unfiltered and unbiased reviews.</p>
+																<ul>
+																				<li>Add your own experiences</li>
+																				<li>Leave reviews and experiences</li>
+																				<li>See locations for all camps</li>
+																</ul>
+																<button class="btn-large btn-dark text-light p-2" style="border-radius: 5px;"><a href="#">View Campgrounds</a></button>
+															<p class="pt-3">Partnered with:</p>	
+															<div>
+																			<img src="Assets/Airbnb.svg" alt=""><img src="Assets/Booking.svg" alt=""><img src="Assets/Plum Guide.svg" alt="">
+															</div>
+												</div>
+								</div>
+								<div class="image">
+												<img src="Assets/Hero Image.jpg" alt="Camp">
+								</div>
+				</div>
+</body>
+</html>

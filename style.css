@@ -1,0 +1,77 @@
+	@font-face  {
+					font-family: 'home';
+					src: url('Assets/archivo.regular.ttf');
+	}
+	body{
+					font-family: "home";
+	}
+	.brand{
+				margin-right: 10px;
+}
+input,textarea{
+				border: none !important;
+}
+.container-body{
+				width: 55%;
+				margin: auto;
+}
+.input{
+				background: #efefef;
+}
+.menu{
+				display: none;
+}
+.ul{
+				list-style-type: none;
+				display: none;
+}
+a{
+				text-decoration: none;
+				color: inherit;
+}
+@media screen and (max-width:435px){
+				.container-body{
+								width:100%;
+				}
+				div.nav-right{
+								display: none !important;
+				}
+				
+				.menu{
+								padding: 5px 10px;
+								font-size: 1.2em;
+								background: #efefef;
+								display: block;
+				}
+				.brand-text{
+								display: none;
+				}
+				.ul{
+								display: block;
+				}
+}
+@media (max-width:768px) and (min-width:436px){
+				div.container-body{
+								width:80%;
+								margin-right: 0 !important;
+								margin-left: 0 !important;
+				}
+				
+				div.nav-right{
+								display: none !important;
+				}
+				
+				.menu{
+								padding: 5px 10px;
+								font-size: 1.2em;
+								background: #efefef;
+								display: block;
+				}
+				.brand-text{
+								display: none;
+				}
+				.ul{
+								display: block;
+				}
+}
+		

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Yelp Camp | Services</title>
+				<meta name="author" content="Victor Evogor">
+				<link rel="shortcut icon" href="Assets/Logo.svg" type="image/x-icon">
+				<link rel="stylesheet" href="../../frameworks/Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+				<link rel="stylesheet" href="style.css">
+				<style>
+								.container-main > div{
+												border: 1px solid #eee;
+												padding: 20px;
+												color:#555;
+								}
+								 h3,h6{
+												color:#000 !important;
+								}
+								.container-main div img{
+												display: block;
+												width:100%;
+								}
+								
+								
+								.container-side-inner{
+												border: 1px solid #eee;
+												padding: 20px;
+								}
+								.container-side-bar img{
+												display:block;
+												width:100%;
+								}
+								@media  (min-width: 769px){
+												.container-body-grid {
+																display: grid;
+																grid:1fr/1fr 1fr 1fr;
+																width:100% !important;
+																
+																grid-gap:20px 20px;
+								}
+								.container-side-bar{
+												grid-area: 1/1/2/2;
+												height:auto;
+								}
+								.container-main{
+												grid-area:1/2/3/-1;
+												
+								}
+								.container-body{
+												margin-left: 0;
+																margin-right: 0;
+																width: 100%;
+								}
+								}
+								@media (max-width:768px) and (min-width:436px){
+												div.container-body{
+																margin:20px auto !important;			}
+										.container-side-bar img{
+												display:block;
+												width:100%;
+												height: 350px;
+												
+								}						
+								}
+				</style>
+				<link rel="stylesheet" href="../../frameworks/fontawesome-free-5.15.4-web/css/all.min.css">
+				<script src="http://ajax.googleapis.com/ajax/libs/jquey/3.5.1/jquery.min.js"></script>
+				
+</head>
+<body>
+				<div class="container">
+								<nav class="p-4 d-flex justify-content-between">
+												<div class="logo d-flex align-items-center">
+																<div class="brand">
+																				<img src="Assets/Logo.svg" alt="" class="me-2">
+																</div>
+																<div class="brand-text">
+																				Home
+																</div>
+												</div>
+												<div class="menu" >
+																<img src="Assets/Hamburger Menu.svg" alt="">
+												</div>
+												<div class="nav-right d-flex align-items-center">
+													<div class="fw-bold me-2"><a href="#">John Doe</a></div>
+													<div><a href="#">Log Out</a></div>	
+												</div>
+								</nav>
+								<ul class="ul">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Log out</a></li>
+												<li ><a href="#" class="fw-bold">John Doe</a></li>
+								</ul>
+								<div class="container container-body mx-auto mt-3 mb-5">
+												<div class="container-body-grid">
+																<div class="container-main ">
+															<div>
+															<img src="Assets/Camp Images/Mount Ulap.jpg" alt="Mount Ulap">			
+																<h3 style="display: inline-block;">Mount Ulap</h3>
+																<div style="float:right;" class="fw-bold text-dark">$104.99/night</div>
+																<div class="container-grid-des">
+																	<p>
+																			Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Philippines, that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.
+																	</p>			
+																	<p>
+																					<em>Submitted by Andrew Mike</em>
+																	</p>
+																</div>
+															</div>	
+															<div class="my-4">
+																			<h6 class="d-inline-block">Adam Jones</h6>
+																			<div style="float: right;">13h ago</div>
+																			<p>Honestly one of the best experiences ever. Took us a while to figure out how to get there but it was amazing!</p>
+																			<hr class="mt-3">
+																			<h6 class="d-inline-block">Issac Dylan</h6>
+																			<div style="float: right;">1 day ago</div>
+																			<p>Traveling changes you as a person, you gain more perspective, this is the perfect spot to do that.</p>
+																			<hr class="mt-3">
+																			<h6 class="d-inline-block">Hudson Luca</h6>
+																			<div style="float: right;">3 days ago</div>
+																			<p>Definitely recommend going there, not to far and not a lot of people to ruin the experience</p>
+																			 <button class=" btn-lg bg-dark text-light border-0 " style="font-size:1em; display:flex; align-items: center;"><!--<i class="far fa-comment-dots"></i>--> <img src="Assets/Chat Bubble.svg" alt="" style="width:20px; height:20px; margin-right:3px;"> <span>Leave a Review<span></button>
+															</div>				
+																</div>
+																<div class="container-side-bar"><div class="container-side-inner">
+																				<img src="Assets/Map.png" alt="Location Map">
+																</div></div>
+												</div>
+											</div>	
+								<footer class="mb-5 container"><img src="Assets/Logo.svg" alt=""></footer>
+				</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				
+				
+				<script>
+								if(innerWidth<=768)
+								$(".ul").slideToggle(500);
+								$(".menu").click(function (){
+								if(innerWidth<=768)
+												$(".ul").slideToggle(500);
+								})
+				</script>
+</body>
+</html>

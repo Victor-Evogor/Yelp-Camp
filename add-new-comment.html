@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Yelp Camp | Add New Comment</title>
+				<meta name="author" content="Victor Evogor">
+				
+				<link rel="stylesheet" href="../../frameworks/Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+				<link rel="shortcut icon" href="Assets/Logo.svg" type="image/x-icon">
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+				<link rel="stylesheet" href="style.css">
+				<link rel="stylesheet" href="../../frameworks/fontawesome-free-5.15.4-web/css/all.min.css">
+				<script src="http://ajax.googleapis.com/ajax/libs/jquey/3.5.1/jquery.min.js"></script>
+				
+</head>
+<body>
+				<div class="container">
+								<nav class="p-4 d-flex justify-content-between">
+												<div class="logo d-flex align-items-center">
+																<div class="brand">
+																				<img src="Assets/Logo.svg" alt="" class="me-2">
+																</div>
+																<div class="brand-text">
+																				Home
+																</div>
+												</div>
+												<div class="menu" >
+																<img src="Assets/Hamburger Menu.svg" alt="">
+												</div>
+												<div class="nav-right d-flex align-items-center">
+													<div class="fw-bold me-2"><a href="#">John Doe</a></div>
+													<div><a href="#">Log Out</a></div>	
+												</div>
+								</nav>
+								<ul class="ul">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Log out</a></li>
+												<li ><a href="#" class="fw-bold">John Doe</a></li>
+								</ul>
+								<div class="container container-body mx-auto mt-3 mb-5">
+												<h1>Add New Comment</h1>
+												<form method="POST" class="mt-2">
+																<div class="mb-3">
+																<label class="d-block mb-2">Description</label>
+																<textarea class="form-control input" placeholder="This was probably the best camp I've visited this year, definitely recommend visiting any time soon" rows="5"></textarea>
+																
+																</div>
+																<input type="button" value="Post Comment" class="btn btn-block btn-dark text-light w-100 p-2">
+												</form>
+								</div>
+								<footer class="mb-5 container"><img src="Assets/Logo.svg" alt=""></footer>
+				</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				
+				
+				<script>
+								if(innerWidth<=768)
+								$(".ul").slideToggle(500);
+								$(".menu").click(function (){
+								if(innerWidth<=768)
+												$(".ul").slideToggle(500);
+								})
+				</script>
+</body>
+</html>

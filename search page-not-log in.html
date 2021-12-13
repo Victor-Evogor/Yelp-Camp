@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Yelp Camp | Find Campground</title>
+				<meta name="author" content="Victor Evogor">
+				
+				<link rel="stylesheet" href="../../frameworks/Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+				<link rel="shortcut icon" href="Assets/Logo.svg" type="image/x-icon">
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+				<link rel="stylesheet" href="style.css">
+				
+				<script src="http://ajax.googleapis.com/ajax/libs/jquey/3.5.1/jquery.min.js"></script>
+				<style>
+								
+								header{
+												background: rgb(249,246,241);
+								}
+								input:focus,input:active{
+												outline: none;
+								}
+								.showcase-gal img{
+												display: block;
+												width: 100%;
+												border-radius: 5px;
+								}
+								.showcase-gal{
+												display: grid;
+												grid: 1fr 1fr/repeat(3, 1fr);
+												grid-gap: 10px 10px;
+								}
+								
+								.view-camp a{
+												font-size: 1.1em;
+								}
+								.vcard{
+												position: relative;
+												display: flex;
+												flex-direction: column;
+												justify-content: space-between;
+								}
+								.vcard img + h6{
+												margin-top: 10px;
+								}
+								
+								#form{
+																display: flex;
+												}
+												#form input.btn-dark{
+																margin-left: 10px;
+												}
+								@media (max-width: 436px){
+												header div.w-50{
+																width:100% !important;
+												}
+												
+												#form{
+																display: block;
+												}
+												#form input.btn-dark{
+																display:block;
+																width: 100%;
+																margin: 15px 0 0;
+												}
+												.showcase-gal{
+																display: block;
+												}
+												.vcard{
+																margin-bottom: 15px;
+												}
+								}
+								@media (max-width:768px) and (min-width:436px){
+												.showcase-gal{
+																grid: repeat(3,1fr)/repeat(2,1fr);
+												}
+								}
+				</style>
+</head>
+<body>
+				<div class="container">
+								<nav class="p-4 d-flex justify-content-between align-middle">
+												<div class="logo d-flex align-middle align-items-center">
+																<div class="brand">
+																				<img src="Assets/Logo.svg" alt="" class="me-2">
+																</div>
+																<div class="brand-text pt-1">
+																				Home
+																</div>
+												</div>
+												<div class="menu" >
+																<img src="Assets/Hamburger Menu.svg" alt="">
+												</div>
+												<div class="nav-right d-flex align-items-center">
+													<div ><a href="#">Log In</a></div>
+													<div class="ms-2"><a href="#" class="btn-dark text-light btn-lg">Create Account</a></div>	
+												</div>
+								</nav>
+								<ul class="ul">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Log In</a></li>
+												<li ><a href="#" class="fw-bold">Create Account</a></li>
+								</ul>
+								<div class="container   mt-3 mb-5">
+										<header class="p-5">
+														<h1 class="fw-bold">Welcome to Yelp Camp</h1>
+														<div class="w-50">
+														<p >View our handpicked camp grounds from all over the world, or add your own.</p>
+														<form id="form">
+																		<div class="d-flex py-1" style="border:solid 0.5px #666; border-radius:3px; background:#fff;">
+																						<img src="Assets/Search Icon.svg" alt="" style="background: #fff; padding:10px; border-radius:3px 0 0 3px;"><input type="search" name="search" id="search" style="width:100%; border-radius:0 3px 3px; " placeholder="Search for camps">
+																		</div>
+																		<input type="submit" value="Search" class="btn-dark text-light btn-lg">
+														</form>
+														<p class="pt-3"><a href="#" style="text-decoration: underline; color: inherit;" >Or add your own campground</a></p>
+														<div>
+										</header>		
+										<div class="bottom my-3 showcase-gal">
+														<div class="border border-1 vcard p-2">
+																		<div>
+																			<img src="Assets/Camp Images/Mount Ulap.jpg" alt="" >	
+																			<h6 class="fw-bold">Mount Ulap</h6>
+																			<p>One of the most famous hikes in Benguet is mt Ulap in itogun.</p>
+																			</div>
+																			<div class="border border-1 view-camp">
+																							<a href="#" class="d-block p-3 fw-bold text-center">View campground</a>
+																			</div>
+																		</div>
+																		<div class="border border-1 vcard p-2">
+																						<div>
+																			<img src="Assets/Camp Images/Onay Beach.jpg" alt="" >	
+																			<h6 class="fw-bold">Onay Beach</h6>
+																			<p>This is one of the best beach camping sites, beautiful and pristine.</p>
+																			</div>
+																			<div class="border border-1 view-camp">
+																							<a href="#" class="d-block p-3 fw-bold text-center">View campground</a>
+																			</div>
+																		</div>
+																		<div class="border border-1 vcard p-2">
+																						<div>
+																			<img src="Assets/Camp Images/Calaguas Island.jpg" alt="" >	
+																			<h6 class="fw-bold">Calaguas Island</h6>
+																			<p>A paradise of island that can rival the white sand beauty of Borocay.</p>
+																			</div>
+																			<div class="border border-1 view-camp">
+																							<a href="#" class="d-block p-3 fw-bold text-center">View campground</a>
+																			</div>
+																		</div>
+																		<div class="border border-1 vcard p-2">
+																						<div>
+																			<img src="Assets/Camp Images/Seven Sisters Waterfall.jpg" alt="" >	
+																			<h6 class="fw-bold">Seven Sisters Waterfall</h6>
+																			<p>The Seven Sisters is the 39th tallest waterfall in Norway.</p>
+																			</div>
+																			<div class="border border-1 view-camp">
+																							<a href="#" class="d-block p-3 fw-bold text-center">View campground</a>
+																			</div>
+																		</div>
+<div class="border border-1 vcard p-2">
+				<div>
+																			<img src="Assets/Camp Images/Latik Riverside.jpg" alt="" >	
+																			<h6 class="fw-bold">Latik Riverside</h6>
+																			<p>Philippines is one of the most dazzling country in all of Asia.</p>
+																			</div>
+																			<div class="border border-1 view-camp">
+																							<a href="#" class="d-block p-3 fw-bold text-center">View campground</a>
+																			</div>
+																		</div>
+																				<div class="border border-1 vcard p-2">
+																								<div>
+																			<img src="Assets/Camp Images/Buloy Springs.jpg" alt="" >	
+																			<h6 class="fw-bold">Buloy Springs</h6>
+																			<p>This is one of the best beach camping sites, beautiful and prestine.</p>
+																			</div>
+																			<div class="border border-1 view-camp">
+																							<a href="#" class="d-block p-3 fw-bold text-center">View campground</a>
+																			</div>
+																		</div>
+										</div>
+								</div>
+								<footer class="mb-5 container ps-4"><img src="Assets/Logo.svg" alt=""></footer>
+				</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				
+				
+				<script>
+								if(innerWidth<=768)
+								$(".ul").slideToggle(500);
+								$(".menu").click(function (){
+								if(innerWidth<=768)
+												$(".ul").slideToggle(500);
+								})
+				</script>
+</body>
+</html>

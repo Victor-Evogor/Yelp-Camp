@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Yelp Camp | Sign In</title>
+				<meta name="author" content="Victor Evogor">
+				<link rel="shortcut icon" href="Assets/Logo.svg" type="image/x-icon">
+				<link rel="stylesheet" href="../../frameworks/Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">	
+				<style>
+								.body{
+												display: flex;
+												max-width: 1440px ;
+												margin: auto;
+								}
+								.left{
+												width: 60%;
+												
+								}
+								.left > div{
+												width: 80%;
+												margin: auto;
+												padding-left: 50px;
+								}
+								.right{
+												background: rgb(249,246,241);
+												width:40%;
+												display: flex;
+												flex-direction: column;
+												justify-content: center;
+												align-items: center;
+								}
+								.right > div{
+												width: 60%;
+								}
+								.right > div blockquote{
+												font-weight: bold;
+												font-size: 1.1em;
+								}
+								.top{
+												align-items: center;
+												justify-content: space-between;
+												display: flex;
+								}
+								.inner-body{
+												margin: 5rem 0;
+								}
+								.form-input{
+												background: rgb(247,247,247);
+												border: none;
+								}
+								a{
+												color: rgb(44,165,212);
+								}
+								.quoter{
+												display: flex;
+												align-items: center;
+								}
+								
+								.light{
+												color: #666;
+								}
+								@media screen and (max-width: 768px){
+												.body{
+																flex-direction: column
+												}
+												.inner-body{
+																width: 100%;
+																margin: 20px 0;
+												}
+												.left{
+																width: 100%;
+																padding:0;
+												}
+												.left > div{
+																padding: 0;
+																width: 100%;
+																padding: 5px 3%;
+																
+												}
+												.right{
+																width:100%;
+												}
+												.right > div{
+																width:100%;
+																padding: 25px 15px;
+												}
+								}
+								@media (min-width: 480px){
+												.left>div form{
+															width: 70%;	
+												}
+								}
+				</style>		
+				<link rel="stylesheet" href="../../frameworks/fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+				<div class="body">
+								<div class="left p-2">
+												<div>
+																<div class=" top">
+																				<img src="Assets/Logo.svg" alt=""><div><a href="#" class="light text-decoration-none"><i class="fa fa-arrow-left"></i> Back to campgrounds</a></div>
+																</div>
+																<div class="inner-body">
+																				<h1 class="my-2">Start Exploring Camps From All Around the World</h1>
+																				<form method="POST" class="mt-2">
+																							<label class="d-block">Username</label>	
+																							<input type="text" name="username" class="form-control d-block my-2 form-input" placeholder="johndoe_91">
+																							<label class="d-block">Password</label>	
+																							<input type="text" name="username" class="form-control d-block my-2 form-input" placeholder="Enter your password">
+																							<input type="submit" value="Login" class="btn-block btn-dark btn-lg text-light w-100 my-3">
+																							<p><span class="light">Not a user yet? </span> <a href="#">Create an account</a></p>
+																				</form>
+																</div>
+												</div>
+								</div>
+								<div class="right">
+												<div>
+																<blockquote>
+																				<q>YelpCamp has honestly saved me hours of research time, and the camps on here are definitely well picked and added.</q>
+																</blockquote>
+																<div class="quoter">
+																				<img src="Assets/User Testimonial.svg" alt="">
+																				<div class="ms-2">
+																								<div class="attributor fw-bold">May Andrews</div>
+																								<div class="light">Professional Hiker</div>
+																				</div>
+																</div>
+												</div>
+								</div>
+				</div>
+				<script src="https://kit.fontawesome.com/815384b62e.js" crossorigin="anonymous"></script>
+</body>
+</html>

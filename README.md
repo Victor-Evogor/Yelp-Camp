@@ -2,9 +2,8 @@
 
 ##This is a codewell project solved by Victor Evogor
 
-The structure is as follows
-<br>[Assets](Assets)
-<br>[Design](Design)
+These are all the pages on this website, click to explore
+
 <br>[add-new-camp-ground page](add-new-camp-ground.html)
 <br>[add-new-comment](add-new-comment.html)
 <br>[Individual Campground Page](individual-campground-page.html)
